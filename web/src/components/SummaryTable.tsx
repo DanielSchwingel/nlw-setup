@@ -1,7 +1,9 @@
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
+
 import { api } from '../lib/axios'
 import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning'
+
 import { HabitDay } from './HabitDay'
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
