@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { useNavigation } from '@react-navigation/native'
+import { useState, useCallback } from 'react'
+import { useNavigation, useFocusEffect} from '@react-navigation/native'
 import { Text, View, ScrollView, Alert } from 'react-native'
 import dayjs from 'dayjs'
 
@@ -27,9 +27,9 @@ function Home() {
    const [ summary, setSummary ] = useState<iSummary | null>(null)
    const { navigate } = useNavigation()
 
-   useEffect(() => {
+   useFocusEffect(useCallback(() => {
       fetchData()
-   }, [])
+   }, []))
 
    async function fetchData(){
       try {
