@@ -9,7 +9,8 @@ app.register(cors)
 app.register(appRoutes)
 
 app.listen({
-   port: 3333
+   port: 3333,
+   host: '192.168.0.153'
 }).then(() => {
    console.log('🚀 Server is running')
 }) 
