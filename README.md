@@ -5,8 +5,6 @@ Application developed at NLW Setup, organized by Rocketseat. 🚀
 
 <br>
 
-# Habitto.life 
-
 ## 🧪 Technologies
 
 This project was developed using the following technologies:
